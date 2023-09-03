@@ -1,0 +1,13 @@
+﻿
+@model List<ProductDto>
+
+
+<div class="col-md-9">
+    <h2>Seçilen Kategori Ürünleri:</h2>
+    <ul id="urunler" class="list-group">
+        @foreach (var item in Model)
+        {
+            <li class="list-group-item">@item.Name Fiyat: @item.Price</li>
+        }
+    </ul>
+</div>
